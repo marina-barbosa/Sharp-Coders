@@ -1,0 +1,26 @@
+<p>comp-03 works!</p>
+
+<!-- Condicional -->
+@if (media >=7) {
+  <p>Aprovado(a)</p>
+}@else if (media >= 5) {
+  <p>Em exame</p>
+}@else {
+  <p>Reprovado(a)</p>
+}
+
+<!-- escolha -->
+@switch (linguagem) {
+  @case ('html') {<p>Linguagem de marcação</p>}
+  @case ('CSS') {<p>Linguagem de estilo</p>}
+  @case ('javascript') {<p>Linguagem de programação</p>}
+  @default {<p>Linguagem não encontrada</p>}
+}
+
+<!-- laço de repetição -->
+
+@for (nome of nomes; track $index) {
+  <p>{{$index}} - {{nome}}</p>
+}@empty {
+  <p>O vetor de nomes esta vazio.</p>
+}

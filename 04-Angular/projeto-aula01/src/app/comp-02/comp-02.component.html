@@ -1,0 +1,44 @@
+<h1>comp-02 DIRETIVAS!</h1>
+
+<!--
+  PROPERTY BIND
+  ()   -> HTML chama uma função/variavel no arquivo TS
+  []   -> TS envia para o arquivo HTML
+  [()] -> via de mão dupla, HTML pra TS e TS pra HTML
+ -->
+
+<h3>Condicionais</h3>
+<button (click)="visibilidadeTexto()">Clique aqui</button>
+<h3 *ngIf="exibirTexto">Aprendendo a trabalha com ngIf</h3>
+
+<h3>Template</h3>
+<ng-template [ngIf]="exibirTexto">
+  <p>Texto dentro do template...</p>
+</ng-template>
+
+<h3>Loop For</h3>
+<ul *ngFor="let n of nomes">
+  <li>{{n}}</li>
+</ul>
+
+<h3>Loop For com Index</h3>
+<ul *ngFor="let n of nomes; index as i">
+  <li>{{i}} - {{n}}</li>
+</ul>
+
+<h3>Switch Case</h3>
+
+<select [(ngModel)]="linguagem"> <!-- precisa importar o FormsModule -->
+  <option value="">Selecione alguma linguagem</option>
+  <option value="C#">C#</option>
+  <option value="Java">Java</option>
+  <option value="Python">Python</option>
+</select>
+<ul [ngSwitch]="linguagem">
+  <li *ngSwitchCase="'C#'">C# é uma linguagem desenvolvida pela Microsfot</li>
+  <li *ngSwitchCase="'Java'">Java é u ma linguagem que pertence a Oracle</li>
+  <li *ngSwitchCase="'Python'">Pyhton é uma linguagem muito rápida</li>
+  <li *ngSwitchDefault>Informe uma linguagem</li>
+</ul>
+
+

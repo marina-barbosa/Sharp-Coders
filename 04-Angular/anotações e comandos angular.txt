@@ -1,0 +1,31 @@
+
+# criar novo projeto
+ng new nome-projeto
+> CSS
+> SSR e SSG? NAO
+
+# executar projeto sem abrir o navegador
+ng serve 
+ng s
+
+# executar projeto e abrir navegador 
+ng serve --open 
+ng s --o
+
+# criar componente
+ng generate component nome-componente
+ng g c nome-componente
+
+
+##############################################
+
+
+## IMPORTANT NOTES ##
+
+# importar CommonModule
+component.ts > @Component > imports:[ ]
+
+
+
+
+
