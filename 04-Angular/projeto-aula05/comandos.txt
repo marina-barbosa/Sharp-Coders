@@ -1,0 +1,13 @@
+1. criar component de aluno
+ng g c components/aluno
+
+2. criar servico de aluno
+ng g s services/aluno
+
+3. Criar um modelo de aluno
+a. Cria uma pasta dentro de 'app' chamada 'modelo'
+b. Criar dentro da pasta 'modelo' um arquivo 'Aluno.ts'
+
+4. Executar o projeto
+a. ng s --o
+b. ng serve
