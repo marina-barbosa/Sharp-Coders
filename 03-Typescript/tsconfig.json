@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true, // compila ao salvar
+  "compilerOptions": { // opções do compilador
+    "target": "es2022", //versão do JavaScript gerado na compilação
+    "outDir": "./dist", // diretório de saída dos compilados
+    "module": "commonjs", // compila com require()
+    "sourceMap": true, // gera source map ao compilar, ajuda no debug,
+    "removeComments": true, // remove os comentarios na compilação
+    "strict": true, // modo estrito inclui outras opções
+    // "noImplicitAny": true, // [strict] é necessario indicar o tipo de dados que nao sao inferidos
+    // "strictNullChecks": true, // [strict] verifica a possibilidade do dado ser null | undefined
+    // "noImplicitThis": true, // [strict] necessario declarar this
+    // "noImplicitReturns": true, // [strict] indica a possibilidade de retorno undefined
+    // "noUnusedLocals": true, // [strict] indica variaveis que não foram utilizadas
+    // "noUnusedParameters": true, // [strict] indica parametros que não foram utilizados
+    "experimentalDecorators": true,
+  },
+  "include": [
+    "typescript-origamid",
+  ], // compila somente o que estiver na pasta
+  "exclude": [ // pastas que o tsc vai ignorar na hora da compilação
+    "node_modules",
+    "aula 01",
+  ]
+}
