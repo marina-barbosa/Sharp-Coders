@@ -1,0 +1,209 @@
+18/10/2023
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+const A = parseInt(lines.shift());
+const B = parseInt(lines.shift());
+
+const X = A + B;
+
+console.log(`X = ${X}`);
+
+
+--------
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+const raio = parseFloat(lines.shift());
+const n = 3.14159;
+const area = n * Math.pow(raio, 2).toFixed(4);
+
+console.log(`A=${area}`);
+
+------
+
+const A = lines.shift();
+const B = lines.shift();
+
+
+-----
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+const A = lines.shift();
+const B = lines.shift();
+
+const MEDIA = (A + B) * 2;
+const MEDIA = ((A * 3.5) + (B * 7.5)) / 11;
+
+console.log(`MEDIA = ${MEDIA.toFixed(5)}`);
+
+
+=====
+
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var linhas = input.split('\n');
+
+const peca1 = lines.shift();
+const peca2 = lines.shift();
+
+
+const [codPeca1, numPeca1, valor1] = peca1[0].split(' ').map(Number);
+
+
+const [codiPeca2, numPeca2, valor2] =peca2[1].split(' ').map(Number);
+
+
+const totalPeca1 = numPeca1 * valorUn1;
+const totalPeca2 = numPeca2 * valorUn2;
+const totalPagar = totalPeca1 + totalPeca2;
+
+console.log(`VALOR A PAGAR: R$ ${totalPagar.toFixed(2)}`);
+
+
+=====
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var [A, B, C] = input.split(' ').map(parseFloat);
+
+const pi = 3.14159;
+
+const areaTriangulo = (A * C) / 2;
+const areaCirculo = pi * Math.pow(C, 2);
+const areaTrapezio = ((A + B) * C) / 2;
+const areaQuadrado = Math.pow(B, 2);
+const areaRetangulo = A * B;
+
+console.log(`TRIANGULO: ${areaTriangulo.toFixed(3)}`);
+console.log(`CIRCULO: ${areaCirculo.toFixed(3)}`);
+console.log(`TRAPEZIO: ${areaTrapezio.toFixed(3)}`);
+console.log(`QUADRADO: ${areaQuadrado.toFixed(3)}`);
+console.log(`RETANGULO: ${areaRetangulo.toFixed(3)}`);
+
+===
+
+// input '7 14 106';
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split(' ');
+
+
+
+const A = Number(lines.shift());
+const B = Number(lines.shift());
+const C = Number(lines.shift());
+
+const maiorAB = (A + B + Math.abs(A - B)) / 2;
+const maior = (maiorAB + C + Math.abs(maiorAB - C)) / 2;
+
+
+
+console.log(`${maior} eh o maior`);
+
+
+===
+
+
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const lines = input.trim().split('\n');
+
+const [x1, y1] = lines[0].split(' ').map(Number);
+const [x2, y2] = lines[1].split(' ').map(Number);
+
+const distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)).toFixed(4);
+
+console.log(distancia);
+
+====
+
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const [A, B, C] = input.trim().split(' ').map(Number);
+
+const delta = B*B - 4*A*C;
+
+if (delta < 0 || A === 0) {
+    console.log('Impossivel calcular');
+} else {
+    const R1 = (-B + Math.sqrt(delta)) / (2*A);
+    const R2 = (-B - Math.sqrt(delta)) / (2*A);
+
+    console.log(`R1 = ${R1.toFixed(5)}`);
+    console.log(`R2 = ${R2.toFixed(5)}`);
+}
+
+
+=====
+
+
+const salario = parseFloat(lines.shift());
+let imposto = 0;
+
+if (salario <= 2000.00) {
+    return console.log('Isento');
+} else if (salario <= 3000.00) {
+    imposto = (salario - 2000.00) * 0.08;
+} else if (salario <= 4500.00) {
+    imposto = (1000.00 * 0.08) + ((salario - 3000.00) * 0.18);
+} else {
+    imposto = (1000.00 * 0.08) + (1500.00 * 0.18) + ((salario - 4500.00) * 0.28);
+}
+
+if (imposto > 0) {
+    console.log(`R$ ${imposto.toFixed(2)}`);
+}
+
+===
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+const salario = parseFloat(lines.shift());
+let imposto = 0;
+
+if (salario <= 2000.00) {
+    return console.log('Isento');
+} else if (salario <= 3000.00) {
+    imposto = (salario - 2000.00) * 0.08;
+} else if (salario <= 4500.00) {
+    imposto = (1000.00 * 0.08) + ((salario - 3000.00) * 0.18);
+} else {
+    imposto = (1000.00 * 0.08) + (1500.00 * 0.18) + ((salario - 4500.00) * 0.28);
+}
+
+
+    console.log(`R$ ${imposto.toFixed(2)}`);
+
+====
+
+
+const mes = Number(lines.shift());
+
+switch(mes){
+    case 1: console.log('January'); break;
+    case 2: console.log('February'); break;
+    case 3: console.log('March'); break;
+    case 4: console.log('April'); break;
+    case 5: console.log('May'); break;
+    case 6: console.log('June'); break;
+    case 7: console.log('July'); break;
+    case 8: console.log('August'); break;
+    case 9: console.log('September'); break;
+    case 10: console.log('October'); break;
+    case 11: console.log('November'); break;
+    case 12: console.log('December'); break;
+    default: console.log('Invalid month');
+}
+
+
+
+
+
+
+
+
+
+
