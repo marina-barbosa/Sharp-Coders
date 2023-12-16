@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var CalcExtension_1 = require("./base/CalcExtension");
+var calc = new CalcExtension_1.CalcExtension();
+calc.calculate(3, '+', 7);
+calc.showValue();
+calc.calculate(3, '-', 7);
+calc.showValue();
+calc.calculate(3, 'x', 7);
+calc.showValue();
+calc.calculate(3, '/', 7);
+calc.showValue();
