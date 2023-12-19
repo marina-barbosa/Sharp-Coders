@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="container">
+    <mat-card>
+        <mat-card-title>
+            Login
+        </mat-card-title>
+        <mat-card-content>
+            <div class="login-form">              
+
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input required [(ngModel)]="username" name="email" matInput placeholder="Informe seu usuário">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Senha</mat-label>
+                    <input type="password" required [(ngModel)]="senha" name="senha" matInput placeholder="Informe sua senha">
+                </mat-form-field>
+
+                <span>{{mensagem}}</span>
+
+                <button mat-raised-button (click)="login()" color="primary">Enviar</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

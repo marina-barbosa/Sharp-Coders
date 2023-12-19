@@ -2,5 +2,10 @@
   flex: 1 1 auto;  
 }
 
+mat-slide-toggle, .btn-signUp {
+  margin-left: 20px;
+}
 
-  
+.logo {
+  cursor: pointer;
+}

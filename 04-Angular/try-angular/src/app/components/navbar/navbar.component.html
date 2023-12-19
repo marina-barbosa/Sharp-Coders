@@ -1,19 +1,19 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button (click)="showMenu()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
   <mat-icon>eco</mat-icon>
-  <span>Portfolio</span>
+  <span routerLink="/home" class="logo">Portfolio</span>
 
   <span class="spacer"></span>
-  
-  <a mat-button aria-label="Link to contact page">
-    Contact
-  </a>
-  
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-  <button mat-raised-button color="accent">Sing Up</button>
+
+  <label>{{usuarioLogado}}</label>
+
+  <button mat-raised-button class="btn-signUp" color="accent">Sing Up</button>
+
+  <mat-slide-toggle></mat-slide-toggle>
+
 </mat-toolbar>
+
+
   

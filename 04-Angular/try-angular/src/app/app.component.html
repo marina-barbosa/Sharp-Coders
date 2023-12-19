@@ -1,5 +1,25 @@
 
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<app-navbar [Drawer]="drawer"></app-navbar>
+
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+      <mat-list role="list">
+        <mat-list-item routerLink="/login" (click)="drawer.toggle()" role="listitem">
+          Login
+        </mat-list-item>
+        <mat-list-item routerLink="/contact" (click)="drawer.toggle()" role="listitem">
+          Contact
+        </mat-list-item>
+        
+      </mat-list>
+      
+    </mat-drawer>    
+  
+    <router-outlet></router-outlet>
+
+</mat-drawer-container>
+
 <app-footer></app-footer>
 
