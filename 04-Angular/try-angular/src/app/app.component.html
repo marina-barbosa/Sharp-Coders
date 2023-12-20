@@ -1,25 +1,28 @@
+<app-user></app-user>
 
-<app-navbar [Drawer]="drawer"></app-navbar>
-
+<!-- <app-navbar [Drawer]="drawer"></app-navbar>
 
 <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
 
+    <mat-drawer #drawer class="example-sidenav" mode="side">
       <mat-list role="list">
+
         <mat-list-item routerLink="/login" (click)="drawer.toggle()" role="listitem">
           Login
         </mat-list-item>
-        <mat-list-item routerLink="/contact" (click)="drawer.toggle()" role="listitem">
+        <mat-list-item *ngIf="isAuth" routerLink="/contact" (click)="drawer.toggle()" role="listitem">
           Contact
         </mat-list-item>
-        
-      </mat-list>
-      
+        <mat-list-item *ngIf="isAuth" routerLink="/user" (click)="drawer.toggle()" role="listitem">
+          User
+        </mat-list-item>
+
+      </mat-list>      
     </mat-drawer>    
   
     <router-outlet></router-outlet>
 
 </mat-drawer-container>
 
-<app-footer></app-footer>
+<app-footer></app-footer> -->
 
