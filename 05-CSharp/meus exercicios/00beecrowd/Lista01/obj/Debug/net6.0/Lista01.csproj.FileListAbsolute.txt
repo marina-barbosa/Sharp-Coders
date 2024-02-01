@@ -1,0 +1,15 @@
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\bin\Debug\net6.0\Lista01.exe
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\bin\Debug\net6.0\Lista01.deps.json
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\bin\Debug\net6.0\Lista01.runtimeconfig.json
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\bin\Debug\net6.0\Lista01.dll
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\bin\Debug\net6.0\Lista01.pdb
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.AssemblyInfoInputs.cache
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.AssemblyInfo.cs
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.csproj.CoreCompileInputs.cache
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.sourcelink.json
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.dll
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\refint\Lista01.dll
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.pdb
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\Lista01.genruntimeconfig.cache
+D:\Develop\Projetos\Sharp-Coders\05-CSharp\meus exercicios\00beecrowd\Lista01\obj\Debug\net6.0\ref\Lista01.dll

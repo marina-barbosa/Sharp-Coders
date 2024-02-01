@@ -55,6 +55,17 @@ internal class MinhaClasse
 // Métodos Estáticos vs. Métodos de Instância:
 
 
+// Método Estático:
+// Um método estático pertence à classe como um todo, em vez de pertencer a instâncias específicas da classe.
+// Pode ser chamado diretamente na classe, sem a necessidade de criar uma instância dessa classe.
+// Geralmente, é usado para realizar operações que não dependem do estado específico de uma instância, e sim da classe como um todo.
+
+// Método de Instância:
+// Um método de instância está associado a uma instância específica da classe.
+// Pode acessar e modificar os atributos específicos dessa instância.
+// Deve ser chamado em uma instância da classe.
+
+
 
 // Métodos Estáticos:
 // Métodos estáticos pertencem à classe, não a instâncias específicas da classe. Eles são chamados na classe em si, não em uma instância da classe.
