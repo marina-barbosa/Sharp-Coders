@@ -1,0 +1,76 @@
+@MuitosPraMuitosRelacionamento_HostAddress = http://localhost:5004
+
+
+###
+
+GET {{MuitosPraMuitosRelacionamento_HostAddress}}/alunos
+Accept: application/json
+
+###
+
+GET http://localhost:5004/matriculas/aluno/1
+Accept: application/json
+
+###
+
+DELETE  http://localhost:5004/alunos/1
+Accept: application/json
+
+###
+
+GET {{MuitosPraMuitosRelacionamento_HostAddress}}/alunos?s=3&p=1
+Accept: application/json
+
+###
+
+POST {{MuitosPraMuitosRelacionamento_HostAddress}}/alunos
+content-type: application/json
+
+{
+  "nome" : "beatriz silva",
+  "email" : "beatriz.silva@gmail.com"
+}
+
+###
+
+POST {{MuitosPraMuitosRelacionamento_HostAddress}}/cursos
+content-type: application/json
+
+{
+  "nome" : "computacao"
+}
+
+###
+
+POST {{MuitosPraMuitosRelacionamento_HostAddress}}/matriculas
+content-type: application/json
+
+{
+  "alunoId" : 1,
+  "cursoId" : 2
+}
+
+###
+
+GET {{MuitosPraMuitosRelacionamento_HostAddress}}/matriculas
+
+
+###
+
+PUT {{MuitosPraMuitosRelacionamento_HostAddress}}/alunos/2
+content-type: application/json
+
+{
+  "nome" : "aluno atualizado",
+  "email" : "atualizado.silva@gmail.com"
+}
+
+###
+
+DELETE {{MuitosPraMuitosRelacionamento_HostAddress}}/alunos/2
+content-type: application/json
+
+{
+  "nome" : "aluno atualizado",
+  "email" : "atualizado.silva@gmail.com"
+}
